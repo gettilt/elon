@@ -1,0 +1,35 @@
+name: Render README File
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TILT_ROBOT_PAT }}
+
+      - name: Install cogapp
+        run: pip install cogapp
+
+      - name: Render Readme
+        run: cog -r README.md
+
+      - name: Commit Changes
+        run: |-
+          git config --global user.name 'Tilt Robot'
+          git config --global user.email '169302456+Tilt-Robot@users.noreply.github.com'
+          git commit -am "Render README.md file [skip ci]" || exit 0
+          git push
