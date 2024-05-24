@@ -1,0 +1,16 @@
+symbol,sources
+CAT,chat_gpt
+ENPH,"chat_gpt,claude"
+GGAL,chat_gpt
+LMT,chat_gpt
+NVDA,"chat_gpt,twitter"
+PLTR,chat_gpt
+PYPL,"chat_gpt,google"
+SPCE,"chat_gpt,google"
+SQM,chat_gpt
+TSLA,"chat_gpt,claude,twitter,google"
+FCEL,claude
+PLUG,claude
+RUN,claude
+SPWR,claude
+STEM,claude
