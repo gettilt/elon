@@ -5,6 +5,7 @@ with open('config.json') as file:
   config = json.load(file)
   cog.outl(f"# {config['name'].title()}")
 ]]]-->
+# Elon
 <!--//[[[end]]]-->
 
 ## Mission
@@ -20,6 +21,7 @@ with open('config.json') as file:
   config = json.load(file)
   cog.outl(config['prompt'])
 ]]]-->
+Elon Musk is on a hot streak. Anything Elon mentions, backs, or is invests in will benefit. Tesla, X, Solar, SpaceX, Boring, Neuralink, and their suppliers will benefit. In addition crypto, Argentina, and other interest of Elon win.
 <!--[[[end]]]-->
 
 ## Theme Stocks
@@ -51,6 +53,23 @@ with open('theme.csv') as file:
     context_str = _get_context_str_for_ticker(row[0])
     cog.outl(f"| {row[0]} | {context_str} | {row[1]} |")
 ]]]-->
+| Ticker  | Context | Source |
+| ------- | ---- | ---- |
+| CAT | Caterpillar could indirectly benefit from The Boring Company's infrastructure projects, requiring heavy machinery and construction equipment. | chat_gpt |
+| ENPH | A solar energy company that could benefit from the growth in solar energy solutions, a sector Musk is involved in through Tesla's solar division. | chat_gpt,claude |
+| GGAL | An Argentinian bank that could benefit from Musk's interest in Argentina, especially if Tesla or SpaceX expand operations or investments there. | chat_gpt |
+| LMT | Lockheed Martin could see indirect benefits from the increased interest in space exploration driven by SpaceX's achievements. | chat_gpt |
+| NVDA | NVIDIA could benefit from the need for advanced computing in Musk's ventures, especially in AI for Tesla and potential applications in Neuralink. | chat_gpt,twitter |
+| PLTR | A data analytics company that could indirectly benefit from Musk's ventures requiring advanced data analysis and AI, like Tesla and SpaceX. | chat_gpt |
+| PYPL | As Musk's former venture, PayPal could benefit from any fintech innovations or endorsements Musk makes, given his influence. | chat_gpt,google |
+| SPCE | While not directly related to Musk, Virgin Galactic could benefit from the overall interest in space exploration Musk generates. | chat_gpt,google |
+| SQM | A lithium producer that benefits from the demand for electric vehicle batteries, indirectly boosted by Tesla's success. | chat_gpt |
+| TSLA | Directly benefits as Musk's flagship company, leading in electric vehicles and energy solutions. | chat_gpt,claude,twitter,google |
+| FCEL |  | claude |
+| PLUG |  | claude |
+| RUN |  | claude |
+| SPWR |  | claude |
+| STEM |  | claude |
 <!--[[[end]]]-->
 
 ## License
@@ -74,6 +93,9 @@ with open('config.json') as file:
   cog.outl(f'  <img src="https://contrib.rocks/image?repo=gettilt/{repo}" />')
   cog.outl('</a>')
 ]]]-->
+<a href="https://github.com/gettilt/elon/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gettilt/elon" />
+</a>
 <!--[[[end]]]-->
 
 ## Join Our Community
