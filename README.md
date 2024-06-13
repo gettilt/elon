@@ -65,7 +65,6 @@ with open('theme.csv') as file:
 | SPCE | While not directly related to Musk, Virgin Galactic could benefit from the overall interest in space exploration Musk generates. | chat_gpt,google |
 | SQM | A lithium producer that benefits from the demand for electric vehicle batteries, indirectly boosted by Tesla's success. | chat_gpt |
 | TSLA | Directly benefits as Musk's flagship company, leading in electric vehicles and energy solutions. | chat_gpt,claude,twitter,google |
-| FCEL |  | claude |
 | PLUG |  | claude |
 | RUN |  | claude |
 | SPWR |  | claude |
